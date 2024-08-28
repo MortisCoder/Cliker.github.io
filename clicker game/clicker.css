@@ -1,0 +1,49 @@
+html {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 2rem;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	background-color: #222;
+	color: white;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#button {
+	--color: firebrick;
+	--border-color: firebrick;
+	--shadow-color: rgb(112, 20, 20);
+
+	position: relative;
+	font-size: .75rem;
+	width: 200px;
+	height: 50px;
+	border: 2px solid var(--border-color);
+	background-color: var(--color);
+	color: white;
+	cursor: pointer;
+	box-shadow: 0 4px 6px var(--shadow-color);
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#button:hover {
+	background-color: darkred;
+	box-shadow: 0 6px 8px var(--shadow-color);
+}
+
+#counter {
+	font-size: 3rem;
+	margin-top: 20px;
+}
